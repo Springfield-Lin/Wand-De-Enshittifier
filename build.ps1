@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-\\$webPanelDir = Join-Path $repoRoot 'web-panel'
+# $webPanelDir = Join-Path $repoRoot 'web-panel'
 $nativeBuildRoot = Join-Path $repoRoot '.tmp/cmake'
 $asarFusesSourceDir = Join-Path $repoRoot 'tools/asar-fuses-bypass'
 $asarFusesBuildDir = Join-Path $nativeBuildRoot 'asar-fuses-bypass'
@@ -84,13 +84,13 @@ $visualStudio = Resolve-VisualStudioPath
 $msbuild = Resolve-MSBuildPath $visualStudio
 $dumpBin = Resolve-DumpBinPath $visualStudio
 
-\\Invoke-Step 'Install web-panel dependencies' {
+<#Invoke-Step 'Install web-panel dependencies' {
     & $pnpm --dir $webPanelDir install --frozen-lockfile
-}
+}#>
 
-\\Invoke-Step 'Build web-panel' {
+<#Invoke-Step 'Build web-panel' {
     & $pnpm --dir $webPanelDir run build
-}
+}#>
 
 Invoke-Step 'Configure asar-fuses-bypass' {
     Remove-Item Env:CMAKE_GENERATOR -ErrorAction SilentlyContinue
