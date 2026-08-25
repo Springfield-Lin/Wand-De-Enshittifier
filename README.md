@@ -22,7 +22,8 @@ The .NET patcher modifies files in the selected local Wand installation and does
 ✅ Local environment configuration management <br/>
 ✅ Automated compatibility adjustments for new client versions <br/>
 ✅ Advanced layout and theme customization (Client-side only) <br/>
-~~✅ AI Features <br/>~~ Unused in this fork.
+~~✅ AI Features <br/>~~  Unused in this fork.
+
 ~~✅ Remote web panel (Remote Connect on mobile) <br/>~~ My personal fork has this feature removed entirely.
 
 ~~## 🌐 Remote Web Panel~~
