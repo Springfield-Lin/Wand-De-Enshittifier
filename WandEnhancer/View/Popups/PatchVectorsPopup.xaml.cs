@@ -45,10 +45,10 @@ namespace WandEnhancer.View.Popups
                 AddScript(path);
             }
 
-            if (_selectedScripts.Count > 0)
+            /*if (_selectedScripts.Count > 0)
             {
                 RemoteWebPanelPreviewBox.IsChecked = true;
-            }
+            }*/
 
             UpdateScriptsEmptyState();
         }
