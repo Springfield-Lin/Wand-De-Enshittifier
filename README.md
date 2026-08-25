@@ -23,11 +23,10 @@ The .NET patcher modifies files in the selected local Wand installation and does
 ✅ Automated compatibility adjustments for new client versions <br/>
 ✅ Advanced layout and theme customization (Client-side only) <br/>
 ✅ AI Features <br/>
-~~✅ Remote web panel (Remote Connect on mobile) <br/>~~
+~~✅ Remote web panel (Remote Connect on mobile) <br/>~~ My personal fork disables this feature entirely.
 
 ~~## 🌐 Remote Web Panel~~
 ~~WandEnhancer includes a built-in **Remote Web Panel** allowing you to control app features directly from your phone.~~
-My personal fork disables this feature entirely.
 
 ~~### Quick Start:~~
 ~~1. Ensure both your PC and phone are on the **same Wi-Fi network**.~~
