@@ -12,7 +12,7 @@ namespace WandEnhancer.Models
         DisableUpdates = 2,
         DisableTelemetry = 4,
         DevToolsOnF12 = 8,
-        //RemoteWebPanelPreview = 16
+        RemoteWebPanelPreview = 16
     }
     
     public sealed class PatchConfig
