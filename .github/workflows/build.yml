@@ -16,11 +16,11 @@ jobs:
         with:
           version: 10.17.0
 
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 22
-          cache: pnpm
-          cache-dependency-path: web-panel/pnpm-lock.yaml
+     # - uses: actions/setup-node@v5
+     #   with:
+     #     node-version: 22
+     #     cache: pnpm
+     #     cache-dependency-path: web-panel/pnpm-lock.yaml
 
       - name: Build unsigned executable
         shell: pwsh
