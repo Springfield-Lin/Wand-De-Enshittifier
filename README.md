@@ -123,7 +123,7 @@ The build script installs the web panel dependencies, builds the frontend, compi
 
 ## ❓ Q&A
 
-~~- **Why is there no `.exe` in GitHub Releases?**~~
+- ~~**Why is there no `.exe` in GitHub Releases?**~~
   - ~~Official releases are notes-only on purpose. The project no longer distributes prebuilt executables because unsigned or self-built patching tools are repeatedly reuploaded, mislabeled, and flagged by third-party scanners. Build the executable from your own fork using GitHub Actions instead.~~
 - ~~**Where do I download the executable?**~~
 - ~~From your own fork's **Actions** artifact after running the **Build executable** workflow. Do not download `.exe` files from YouTube descriptions, random mirrors, Discord attachments, or issue comments.~~
