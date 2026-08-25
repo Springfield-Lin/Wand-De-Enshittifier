@@ -3,7 +3,7 @@ param(
     [string]$Configuration = 'Release'
 )
 
-$ErrorActionPreference = 'Continue'
+$ErrorActionPreference = 'Stop'
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 # $webPanelDir = Join-Path $repoRoot 'web-panel'
