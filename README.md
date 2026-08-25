@@ -23,21 +23,22 @@ The .NET patcher modifies files in the selected local Wand installation and does
 ✅ Automated compatibility adjustments for new client versions <br/>
 ✅ Advanced layout and theme customization (Client-side only) <br/>
 ✅ AI Features <br/>
-✅ Remote web panel (Remote Connect on mobile) <br/>
+~~✅ Remote web panel (Remote Connect on mobile) <br/>~~
 
-## 🌐 Remote Web Panel
-WandEnhancer includes a built-in **Remote Web Panel** allowing you to control app features directly from your phone.
+~~## 🌐 Remote Web Panel~~
+~~WandEnhancer includes a built-in **Remote Web Panel** allowing you to control app features directly from your phone.~~
+My personal fork disables this feature entirely.
 
-### Quick Start:
-1. Ensure both your PC and phone are on the **same Wi-Fi network**.
-2. Hover over the **Connect** button in the top bar of WandEnhancer.
-3. Scan the displayed **QR code** with your phone's camera.
+~~### Quick Start:~~
+~~1. Ensure both your PC and phone are on the **same Wi-Fi network**.~~
+~~2. Hover over the **Connect** button in the top bar of WandEnhancer.~~
+~~3. Scan the displayed **QR code** with your phone's camera.~~
 
-### Troubleshooting & Remote Access:
-- **Page isn't loading?** First, ensure both your PC and phone are connected to the **same local network**. Some routers and guest Wi-Fi networks enable client isolation/AP isolation, which blocks devices on the same SSID from reaching each other. If it still does not load, check Windows Firewall and allow inbound traffic on TCP port `3223` for your local network. If Windows marked your connection as **Public**, switching it to **Private** can also help.
-- **Using mobile data or a different network?** If you want to use the panel over mobile data (LTE/5G) or from an entirely different network, you can use [Tailscale](https://tailscale.com/) or similar VPN tools.
-- The panel uses plain HTTP on port `3223` and has no pairing code. Anyone who can reach that port can view the panel and control the active trainer, so use it only on a trusted LAN/VPN and never expose the port directly to the internet.
-- The panel protocol does not include your Wand bearer token or installation-path fields.
+~~### Troubleshooting & Remote Access:~~
+~~- **Page isn't loading?** First, ensure both your PC and phone are connected to the **same local network**. Some routers and guest Wi-Fi networks enable client isolation/AP isolation, which blocks devices on the same SSID from reaching each other. If it still does not load, check Windows Firewall and allow inbound traffic on TCP port `3223` for your local network. If Windows marked your connection as **Public**, switching it to **Private** can also help.~~
+~~- **Using mobile data or a different network?** If you want to use the panel over mobile data (LTE/5G) or from an entirely different network, you can use [Tailscale](https://tailscale.com/) or similar VPN tools.~~
+~~- The panel uses plain HTTP on port `3223` and has no pairing code. Anyone who can reach that port can view the panel and control the active trainer, so use it only on a trusted LAN/VPN and never expose the port directly to the internet.~~
+~~- The panel protocol does not include your Wand bearer token or installation-path fields.~~
 
 ## 👀 How to use?
 
@@ -57,16 +58,16 @@ https://github.com/user-attachments/assets/7966cabe-0aa6-424d-8c2f-981ad91e0f91
 
 
 
-## 🧩 Custom scripts
+~~## 🧩 Custom scripts~~
 
-You can inject your own JavaScript into Wand at patch time to tweak or fix things in the client UI. This reuses the same renderer injection the Remote Web Panel uses, so it requires the **Remote Web Panel** patch to be enabled.
+~~You can inject your own JavaScript into Wand at patch time to tweak or fix things in the client UI. This reuses the same renderer injection the Remote Web Panel uses, so it requires the **Remote Web Panel** patch to be enabled.~~
 
-**How to add a script**
+~~**How to add a script**~~
 
-- In the patch dialog, add one or more `.js` files (only existing `.js` files are accepted), **or**
-- Drop `.js` files into a `renderer-scripts/` folder placed next to the patcher executable.
+~~- In the patch dialog, add one or more `.js` files (only existing `.js` files are accepted), **or**~~
+~~- Drop `.js` files into a `renderer-scripts/` folder placed next to the patcher executable.~~
 
-Then patch as usual — your scripts are bundled into the client and run inside Wand's window.
+~~Then patch as usual — your scripts are bundled into the client and run inside Wand's window.~~
 
 **How it runs**
 
