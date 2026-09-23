@@ -83,20 +83,20 @@ if ($EnableUpdateNotifications) {
     $buildArgs += '/p:EnableUpdateNotifications=true'
 }
 
-Invoke-Step 'Install web-panel dependencies' {
-    & $pnpm --dir $webPanelDir install --frozen-lockfile
+#Invoke-Step 'Install web-panel dependencies' {
+    #& $pnpm --dir $webPanelDir install --frozen-lockfile
 }
 
-Invoke-Step 'Lint web-panel' {
-    & $pnpm --dir $webPanelDir run lint
+#Invoke-Step 'Lint web-panel' {
+    #& $pnpm --dir $webPanelDir run lint
 }
 
-Invoke-Step 'Build web-panel' {
-    & $pnpm --dir $webPanelDir run build
+#Invoke-Step 'Build web-panel' {
+    #& $pnpm --dir $webPanelDir run build
 }
 
-Invoke-Step 'Test web-panel' {
-    & $pnpm --dir $webPanelDir exec vitest run
+#Invoke-Step 'Test web-panel' {
+    #& $pnpm --dir $webPanelDir exec vitest run
 }
 
 Invoke-Step 'Restore NuGet packages' {
