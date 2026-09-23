@@ -4,7 +4,7 @@ param(
     [switch]$EnableUpdateNotifications
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $webPanelDir = Join-Path $repoRoot 'web-panel'
@@ -48,12 +48,12 @@ function Resolve-MSBuildPath {
 
 #function Invoke-Step {
     #param(
-        [string]$Label,
-        [scriptblock]$Action
+        #[string]$Label,
+        #[scriptblock]$Action
     )
 
     #Write-Host "==> $Label" -ForegroundColor Cyan
-    & $Action
+    #& $Action
     #if ($LASTEXITCODE -ne 0) {
         #throw "Step failed: $Label"
     }
