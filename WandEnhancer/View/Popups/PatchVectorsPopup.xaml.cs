@@ -102,10 +102,10 @@ namespace WandEnhancer.View.Popups
                 result.Add(EPatchType.DevToolsOnF12);
             }
 
-            if (RemoteWebPanelPreviewBox.IsChecked == true)
-            {
-                result.Add(EPatchType.RemoteWebPanelPreview);
-            }
+            #if (RemoteWebPanelPreviewBox.IsChecked == true)
+            #{
+                #result.Add(EPatchType.RemoteWebPanelPreview);
+            #}
 
             _onApply(new PatchConfig
             {
