@@ -46,15 +46,15 @@ function Resolve-MSBuildPath {
     return $msbuildPath
 }
 
-#function Invoke-Step {
-    #param(
-        #[string]$Label,
-        #[scriptblock]$Action
+function Invoke-Step {
+    param(
+        [string]$Label,
+        [scriptblock]$Action
     )
 
-    #Write-Host "==> $Label" -ForegroundColor Cyan
-    #& $Action
-    #if ($LASTEXITCODE -ne 0) {
+    Write-Host "==> $Label" -ForegroundColor Cyan
+    & $Action
+    if ($LASTEXITCODE -ne 0) {
         #throw "Step failed: $Label"
     }
 }
