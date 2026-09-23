@@ -37,7 +37,7 @@ function Resolve-VisualStudioPath {
 
 function Resolve-MSBuildPath {
     param([string]$VisualStudioPath)
-
+    }
     $msbuildPath = Join-Path $VisualStudioPath 'MSBuild\Current\Bin\MSBuild.exe'
     if (-not (Test-Path $msbuildPath)) {
         throw "MSBuild.exe not found: $msbuildPath"
