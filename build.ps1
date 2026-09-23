@@ -44,9 +44,6 @@ function Resolve-MSBuildPath {
     }
 
     return $msbuildPath
-}
-
-}
 
 function Resolve-TargetFrameworkRoot {
     # Some local targeting packs are installed but not registered with MSBuild.
