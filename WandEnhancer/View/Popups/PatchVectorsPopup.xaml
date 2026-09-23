@@ -64,7 +64,7 @@
             <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource pv_disable_updates}" />
             <CheckBox Grid.Row="2" Grid.Column="1" x:Name="DisableUpdateBox" HorizontalAlignment="Right" VerticalAlignment="Center" />
 
-            <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource pv_remote_web_panel_preview}" />
+            <!-- <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource pv_remote_web_panel_preview}" /> -->
             <CheckBox Grid.Row="3" Grid.Column="1" x:Name="RemoteWebPanelPreviewBox" HorizontalAlignment="Right" VerticalAlignment="Center" />
 
             <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource pv_auto_apply}" />
