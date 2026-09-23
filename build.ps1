@@ -4,7 +4,7 @@ param(
     [switch]$EnableUpdateNotifications
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 #$webPanelDir = Join-Path $repoRoot 'web-panel'
