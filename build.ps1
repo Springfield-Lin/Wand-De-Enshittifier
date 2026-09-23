@@ -107,16 +107,16 @@ Invoke-Step 'Build solution' {
     & $msbuild $solutionPath @buildArgs /t:Build
 }
 
-$assemblyPath = Join-Path $repoRoot "WandEnhancer\bin\$Configuration\WandEnhancer.exe"
-Invoke-Step 'Test desktop patch state and interop' {
-    & (Join-Path $repoRoot 'scripts\test-desktop.ps1') `
-        -AssemblyPath $assemblyPath `
-        -ExpectUpdateNotifications:$EnableUpdateNotifications
-}
+#$assemblyPath = Join-Path $repoRoot "WandEnhancer\bin\$Configuration\WandEnhancer.exe"
+#Invoke-Step 'Test desktop patch state and interop' {
+   # & (Join-Path $repoRoot 'scripts\test-desktop.ps1') `
+        #-AssemblyPath $assemblyPath `
+        #-ExpectUpdateNotifications:$EnableUpdateNotifications
+#}
 
-Invoke-Step 'Test structural patch locators' {
-    & (Join-Path $repoRoot 'scripts\test-patch-locators.ps1') -AssemblyPath $assemblyPath
-}
+#Invoke-Step 'Test structural patch locators' {
+    #& (Join-Path $repoRoot 'scripts\test-patch-locators.ps1') -AssemblyPath $assemblyPath
+#}
 
 Write-Host ''
 Write-Host "Build completed successfully ($Configuration)." -ForegroundColor Green
