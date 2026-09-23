@@ -4,10 +4,10 @@ param(
     [switch]$EnableUpdateNotifications
 )
 
-$ErrorActionPreference = 'Continue'
+$ErrorActionPreference = 'Stop'
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$webPanelDir = Join-Path $repoRoot 'web-panel'
+#$webPanelDir = Join-Path $repoRoot 'web-panel'
 $solutionPath = Join-Path $repoRoot 'Wand-Enhancer.sln'
 
 function Resolve-CommandPath {
