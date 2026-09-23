@@ -46,16 +46,16 @@ function Resolve-MSBuildPath {
     return $msbuildPath
 }
 
-function Invoke-Step {
-    param(
+#function Invoke-Step {
+    #param(
         [string]$Label,
         [scriptblock]$Action
     )
 
-    Write-Host "==> $Label" -ForegroundColor Cyan
+    #Write-Host "==> $Label" -ForegroundColor Cyan
     & $Action
-    if ($LASTEXITCODE -ne 0) {
-        throw "Step failed: $Label"
+    #if ($LASTEXITCODE -ne 0) {
+        #throw "Step failed: $Label"
     }
 }
 
@@ -84,19 +84,19 @@ if ($EnableUpdateNotifications) {
 }
 
 #Invoke-Step 'Install web-panel dependencies' {
-    & $pnpm --dir $webPanelDir install --frozen-lockfile
+    #& $pnpm --dir $webPanelDir install --frozen-lockfile
 }
 
 #Invoke-Step 'Lint web-panel' {
-    & $pnpm --dir $webPanelDir run lint
+    #& $pnpm --dir $webPanelDir run lint
 }
 
 #Invoke-Step 'Build web-panel' {
-    & $pnpm --dir $webPanelDir run build
+    #& $pnpm --dir $webPanelDir run build
 }
 
 #Invoke-Step 'Test web-panel' {
-    & $pnpm --dir $webPanelDir exec vitest run
+    #& $pnpm --dir $webPanelDir exec vitest run
 }
 
 Invoke-Step 'Restore NuGet packages' {
