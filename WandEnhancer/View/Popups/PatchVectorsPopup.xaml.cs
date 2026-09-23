@@ -57,11 +57,6 @@ namespace WandEnhancer.View.Popups
                 AddScript(path);
             }
 
-            if (_selectedScripts.Count > 0)
-            {
-                RemoteWebPanelPreviewBox.IsChecked = true;
-            }
-
             UpdateScriptsEmptyState();
         }
 
@@ -81,7 +76,7 @@ namespace WandEnhancer.View.Popups
         private void OnPatchButtonClick(object sender, RoutedEventArgs e)
         {
             if (ActivateProBox.IsChecked != true && DisableUpdateBox.IsChecked != true &&
-                DevToolsHotkeyBox.IsChecked != true && RemoteWebPanelPreviewBox.IsChecked != true)
+                DevToolsHotkeyBox.IsChecked != true)
             {
                 return;
             }
@@ -101,11 +96,6 @@ namespace WandEnhancer.View.Popups
             {
                 result.Add(EPatchType.DevToolsOnF12);
             }
-
-            #if (RemoteWebPanelPreviewBox.IsChecked == true)
-            #{
-                #result.Add(EPatchType.RemoteWebPanelPreview);
-            #}
 
             _onApply(new PatchConfig
             {
